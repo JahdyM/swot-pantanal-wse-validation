@@ -1,0 +1,91 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+.venv/
+venv/
+ENV/
+.env
+.env.*
+!.env.example
+
+# Tests, coverage, and type checking
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+.jupyter/
+
+# IDE and operating-system files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Credentials and local configuration
+*.pem
+*.key
+*credentials*
+*secrets*
+config/local.*
+
+# Geospatial sidecars, databases, and temporary files
+*.aux.xml
+*.ovr
+*.qmd
+*.qpj
+*.sbn
+*.sbx
+*.cpg
+*.prj
+*.shx
+*.dbf
+*.gpkg
+*.gdb/
+*.sqlite
+*.tif
+*.tiff
+*.vrt
+*.h5
+*.hdf
+*.hdf5
+*.nc
+*.nc4
+*.zarr/
+
+# Common large or tabular research-data formats
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Data are local by default. Keep only documentation and placeholders.
+data/**
+!data/**/
+!data/README.md
+!data/**/.gitkeep
+
+# Generated outputs: retain placeholders; add vetted final artifacts explicitly.
+outputs/**/*
+!outputs/.gitkeep
+
+# Temporary files and logs
+tmp/
+temp/
+*.log

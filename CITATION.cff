@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+type: software
+title: "SWOT Mission Data Validation for Pantanal Hydrodynamic Analysis"
+abstract: >-
+  Research software and reproducible workflows associated with the master's
+  dissertation “Surface Water and Ocean Topography (SWOT) Mission Data
+  Validation for Pantanal Hydrodinamic Analysis”.
+authors:
+  - family-names: Oliveira
+    given-names: Jahdy Moreno
+    affiliation: "National Institute for Space Research (INPE)"
+date-released: 2026-09-10
+repository-code: "https://github.com/JahdyM/swot-pantanal-wse-validation"
+url: "https://github.com/JahdyM/swot-pantanal-wse-validation"
+keywords:
+  - SWOT
+  - Pantanal
+  - water surface elevation
+  - hydrodynamics
+  - satellite altimetry
+  - validation

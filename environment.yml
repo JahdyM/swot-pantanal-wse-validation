@@ -1,0 +1,8 @@
+name: swot-pantanal-wse-validation
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.11,<3.13
+  - pip
+  # Add and pin scientific, geospatial, and notebook dependencies as the
+  # corresponding workflows are introduced.
