@@ -4,5 +4,17 @@ channels:
 dependencies:
   - python>=3.11,<3.13
   - pip
-  # Add and pin scientific, geospatial, and notebook dependencies as the
-  # corresponding workflows are introduced.
+  - jupyterlab
+  - numpy
+  - pandas
+  - geopandas
+  - shapely
+  - pyproj
+  - pyogrio
+  - xarray
+  - rioxarray
+  - earthaccess
+  - matplotlib
+  - gdal
+  - contextily
+  # Pin exact versions after validating the archival workflow.

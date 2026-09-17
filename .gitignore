@@ -40,6 +40,7 @@ Thumbs.db
 *credentials*
 *secrets*
 config/local.*
+.netrc
 
 # Geospatial sidecars, databases, and temporary files
 *.aux.xml
@@ -80,6 +81,10 @@ data/**
 !data/**/
 !data/README.md
 !data/**/.gitkeep
+
+# Local station/mask inputs and notebook-generated products
+input/
+output/
 
 # Generated outputs: retain placeholders; add vetted final artifacts explicitly.
 outputs/**/*

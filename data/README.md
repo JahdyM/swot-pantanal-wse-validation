@@ -2,6 +2,8 @@
 
 Research data are intentionally excluded from version control. Do not commit raw downloads, sensitive station information, provider credentials, or large derived products.
 
+The [river WSE pipeline](../notebooks/river_validation/README.md) uses two additional local input layers at the repository root: `input/stations.gpkg` and `input/water_masks.gpkg`. Its downloads, per-station tables, maps, and checkpoints go to `output/`. Both directories are ignored by Git and must be created locally by the researcher.
+
 Use the following local directories:
 
 - `raw/`: immutable original downloads from SWOT data services;

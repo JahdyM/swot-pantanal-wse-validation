@@ -7,7 +7,13 @@ Reproducible analysis repository for the master's dissertation **“Surface Wate
 
 ## Project status
 
-This repository is an initial scaffold. Analysis code, notebooks, derived products, and dissertation figures will be added as the research is prepared for release. The directory structure is preserved with `.gitkeep` files so that contributors can place future work in a consistent location.
+This repository is being populated with documented analysis code. The first released notebook is the [SWOT multi-product WSE download and preprocessing pipeline](notebooks/river_validation/swot_pantanal_wse_pipeline.ipynb) associated with a Pantanal Rivers manuscript submitted to *Science of Remote Sensing*. Other workflows, derived products, and dissertation figures will be added as they are prepared for release. Empty directories are preserved with `.gitkeep` files.
+
+### Associated manuscript
+
+Moreno-Oliveira, J., Fassoni-Andrade, A., Trigg, M. A., Moreira, D. M., & Novo, E. M. L. de M. *Multi-product validation of SWOT water surface elevation in the Pantanal Rivers*. Manuscript submitted to *Science of Remote Sensing*; in peer review.
+
+The [river-validation notebook guide](notebooks/river_validation/README.md) covers inputs, authentication, the four SWOT product streams, resumable processing, and outputs. Code author: **Jahdy Moreno-Oliveira**.
 
 ## Research scope
 
@@ -34,7 +40,7 @@ The project is organized around:
 ├── docs/                           # Methods and supporting documentation
 ├── figures/                        # Versionable, publication-ready figures
 ├── notebooks/
-│   ├── river_validation/
+│   ├── river_validation/          # Article-linked download/preprocessing notebook
 │   ├── lake_validation/
 │   ├── hydrological_phase_classification/
 │   ├── absolute_validation/
@@ -66,6 +72,8 @@ The dissertation draws on the following high-level data sources:
 
 See [`data/README.md`](data/README.md) for the expected local layout. The `.gitignore` rules exclude research data by default while retaining directory documentation. Before every commit, confirm that no credentials, access tokens, sensitive coordinates, restricted records, or large binary files have been staged.
 
+For the river pipeline specifically, local station and water-mask layers belong under `input/`, and generated downloads and results go under `output/`; both are ignored by Git.
+
 ## Planned workflow
 
 1. Create the software environment.
@@ -77,14 +85,14 @@ See [`data/README.md`](data/README.md) for the expected local layout. The `.giti
 
 ## Environment
 
-The supplied environment is intentionally minimal while the analysis code is being assembled:
+The supplied environment includes the Python and geospatial dependencies for the published notebook:
 
 ```bash
 conda env create -f environment.yml
 conda activate swot-pantanal-wse-validation
 ```
 
-Add dependencies to `environment.yml` as workflows are introduced. Pin exact versions before producing the dissertation's archival release.
+The Raster stage also requires `gdalmdimtranslate` on `PATH` (provided by the `gdal` package in this environment). Pin exact versions before producing an archival release. A full run additionally requires NASA Earthdata access and local station/mask files, which are not included here.
 
 ## Reproducibility conventions
 
