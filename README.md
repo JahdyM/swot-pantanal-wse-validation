@@ -31,10 +31,9 @@ The project is organized around:
 .
 ├── config/                         # Non-sensitive analysis configuration
 ├── data/
-│   ├── raw/                        # Original source data (not versioned)
-│   ├── external/                   # Third-party reference data (not versioned)
-│   ├── interim/                    # Intermediate products (not versioned)
-│   └── processed/                  # Analysis-ready data (not versioned)
+│   ├── river_analysis/
+│   │   └── ana_processed/          # Classified ANA gauge series
+│   └── lake_analysis/              # Reviewed lake-analysis datasets
 ├── docs/                           # Methods and supporting documentation
 ├── figures/                        # Versionable, publication-ready figures
 ├── notebooks/
@@ -60,9 +59,13 @@ The dissertation draws on the following high-level data sources:
 
 ### Data availability and handling
 
-**Raw data are not included in this repository.** Source archives may be large, subject to provider terms, or contain station/location information that should be reviewed before sharing. Obtain data directly from the relevant providers and follow their current licenses, access rules, and citation requirements.
+**Raw SWOT and other source archives are not included in this repository.** The reviewed [processed ANA gauge series](data/river_analysis/ana_processed/README.md) used by the river analyses are included. Other source archives may be large, subject to provider terms, or contain station/location information that should be reviewed before sharing. Obtain those data directly from the relevant providers and follow their current licenses, access rules, and citation requirements.
 
-See [`data/README.md`](data/README.md) for the expected local layout. The `.gitignore` rules exclude research data by default while retaining directory documentation. Before every commit, confirm that no credentials, access tokens, sensitive coordinates, restricted records, or large binary files have been staged.
+See [`data/README.md`](data/README.md) for the published layout. The
+`.gitignore` rules exclude research data by default and allow only explicitly
+reviewed collections. Before every commit, confirm that no credentials, access
+tokens, sensitive coordinates, restricted records, or unintended large files
+have been staged.
 
 For the river pipeline specifically, local station and water-mask layers belong under `input/`, and generated downloads and results go under `output/`; both are ignored by Git.
 

@@ -1,31 +1,26 @@
-# Data instructions
+# Data
 
-Research data are intentionally excluded from version control. Do not commit raw downloads, sensitive station information, provider credentials, or large derived products.
-
-The [river WSE pipeline](../notebooks/river_validation/README.md) uses two additional local input layers at the repository root: `input/stations.gpkg` and `input/water_masks.gpkg`. Its downloads, per-station tables, maps, and checkpoints go to `output/`. Both directories are ignored by Git and must be created locally by the researcher.
-
-Use the following local directories:
-
-- `raw/`: immutable original downloads from SWOT data services;
-- `external/`: ANA gauge observations, DAHITI/HydroWeb altimetry, ICESat-2 ATL13, and other reference datasets;
-- `interim/`: temporary or partially processed files; and
-- `processed/`: analysis-ready datasets created by reproducible workflows.
-
-For every dataset, keep a local provenance record containing at least the provider, product name and version, download date, spatial and temporal extent, access URL or identifier, license/terms, coordinate reference system, vertical datum, units, and processing history. Store shareable provenance templates or inventories in `docs/`, without listing sensitive credentials or restricted locations.
-
-Suggested local layout:
+Public, analysis-ready data are separated by study component:
 
 ```text
 data/
-├── raw/
-│   └── swot/{pixc,raster,riversp,lakesp}/
-├── external/
-│   ├── ana/
-│   ├── dahiti/
-│   ├── hydroweb/
-│   └── icesat2_atl13/
-├── interim/
-└── processed/
+├── river_analysis/
+│   └── ana_processed/
+│       ├── sem_nivelamento/
+│       └── nivelamento/
+└── lake_analysis/
 ```
 
-The repository's `.gitignore` blocks common geospatial, scientific, tabular, and archive formats as an additional safeguard. If a small derived dataset is appropriate for public release, document its provenance and licensing, then add it deliberately after review.
+- [`river_analysis/`](river_analysis/README.md) contains data used for the
+  Pantanal river analyses.
+- [`lake_analysis/`](lake_analysis/README.md) is reserved for lake-analysis
+  datasets and their provenance documentation.
+
+Only reviewed, explicitly released datasets belong here. Raw SWOT downloads,
+credentials, sensitive station information, temporary processing files, and
+large unreviewed products must remain outside version control.
+
+The [river WSE pipeline](../notebooks/river_validation/README.md) uses local
+`input/stations.gpkg` and `input/water_masks.gpkg` layers and writes downloads,
+tables, maps, and checkpoints to `output/`. Both directories remain ignored
+by Git.

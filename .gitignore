@@ -76,11 +76,14 @@ config/local.*
 *.tar.gz
 *.7z
 
-# Data are local by default. Keep only documentation and placeholders.
+# Data are local by default. Allow only the reviewed ANA processed collection.
 data/**
 !data/**/
 !data/README.md
-!data/**/.gitkeep
+!data/river_analysis/README.md
+!data/river_analysis/ana_processed/README.md
+!data/river_analysis/ana_processed/**/*.csv
+!data/lake_analysis/README.md
 
 # Local station/mask inputs and notebook-generated products
 input/

@@ -44,6 +44,11 @@ separate day/month/year columns via `date_parts_cols`). Rows with an invalid
 date or level are dropped and duplicated dates keep their first occurrence. The
 series are expected to be **daily**.
 
+A reviewed classified collection is available under
+[`data/river_analysis/ana_processed/`](../../data/river_analysis/ana_processed/README.md).
+Use its `sem_nivelamento/` or `nivelamento/` directory as `CFG.input_dir`
+when reproducing the corresponding river analysis.
+
 **Station metadata** *(optional)* — a CSV with one row per station
 (`input/station_metadata.csv` by default):
 
