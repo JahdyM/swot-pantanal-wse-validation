@@ -19,12 +19,10 @@ The [river-validation notebook guide](notebooks/river_validation/README.md) cove
 
 The project is organized around:
 
-- river water-surface-elevation validation;
+- river water-surface-elevation analysis, including absolute validation,
+  dynamic validation, and analyses of potential error drivers;
 - lake water-surface-elevation validation;
-- hydrological phase classification;
-- absolute validation against independent reference measurements;
-- dynamic validation of temporal water-level variations;
-- analyses of potential error drivers; and
+- hydrological phase classification; and
 - reproducible generation of figures and other outputs.
 
 ## Repository structure
@@ -42,18 +40,12 @@ The project is organized around:
 ├── notebooks/
 │   ├── river_validation/          # Article-linked download/preprocessing notebook
 │   ├── lake_validation/
-│   ├── hydrological_phase_classification/
-│   ├── absolute_validation/
-│   ├── dynamic_validation/
-│   └── error_driver_analyses/
+│   └── hydrological_phase_classification/
 ├── outputs/                        # Generated tables and other results
 ├── src/swot_pantanal/              # Reusable Python source code
 │   ├── river_validation/
 │   ├── lake_validation/
-│   ├── hydrological_phase_classification/
-│   ├── absolute_validation/
-│   ├── dynamic_validation/
-│   └── error_driver_analyses/
+│   └── hydrological_phase_classification/
 └── tests/                          # Automated tests
 ```
 
