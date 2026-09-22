@@ -7,13 +7,13 @@ Reproducible analysis repository for the master's dissertation **“Surface Wate
 
 ## Project status
 
-This repository is being populated with documented analysis code. The first released notebook is the [SWOT multi-product WSE download and preprocessing pipeline](notebooks/river_validation/swot_pantanal_wse_pipeline.ipynb) associated with a Pantanal Rivers manuscript submitted to *Science of Remote Sensing*. Other workflows, derived products, and dissertation figures will be added as they are prepared for release. Empty directories are preserved with `.gitkeep` files.
+This repository is being populated with documented analysis code. It currently includes the [SWOT multi-product WSE download and preprocessing pipeline](notebooks/river_validation/swot_pantanal_wse_pipeline.ipynb) and the [hydrological phase classification analysis](notebooks/hydrological_phase_classification/hydrological_phase_analysis.ipynb) associated with a Pantanal Rivers manuscript submitted to *Science of Remote Sensing*. Other workflows, derived products, and dissertation figures will be added as they are prepared for release. Empty directories are preserved with `.gitkeep` files.
 
 ### Associated manuscript
 
 Moreno-Oliveira, J., Fassoni-Andrade, A., Trigg, M. A., Moreira, D. M., & Novo, E. M. L. de M. *Multi-product validation of SWOT water surface elevation in the Pantanal Rivers*. Manuscript submitted to *Science of Remote Sensing*; in peer review.
 
-The [river-validation notebook guide](notebooks/river_validation/README.md) covers inputs, authentication, the four SWOT product streams, resumable processing, and outputs. Code author: **Jahdy Moreno-Oliveira**.
+The [river-validation notebook guide](notebooks/river_validation/README.md) covers inputs, authentication, the four SWOT product streams, resumable processing, and outputs. The [hydrological phase analysis guide](notebooks/hydrological_phase_classification/README.md) documents daily gauge-series classification and its publication-ready figures. Code author: **Jahdy Moreno-Oliveira**.
 
 ## Research scope
 
@@ -40,7 +40,7 @@ The project is organized around:
 ├── notebooks/
 │   ├── river_validation/          # Article-linked download/preprocessing notebook
 │   ├── lake_validation/
-│   └── hydrological_phase_classification/
+│   └── hydrological_phase_classification/ # Gauge-series phase classification
 ├── outputs/                        # Generated tables and other results
 ├── src/swot_pantanal/              # Reusable Python source code
 │   ├── river_validation/
