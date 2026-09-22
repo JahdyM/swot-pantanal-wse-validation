@@ -86,10 +86,12 @@ first cell for the complete folder-tree description.
 ## Citation
 
 If you use this code, please cite the manuscript above. The repository's
-[`CITATION.cff`](../../CITATION.cff) provides a software citation; the
-manuscript citation should be updated when publication details are available.
+[`CITATION.cff`](../../CITATION.cff) contains both the software metadata and
+the preferred manuscript citation.
 
 ## License
 
-No software license has been selected yet. The repository's default copyright
-terms apply until one is added.
+MIT — see [`LICENSE`](../../LICENSE). You are free to use, modify, and
+redistribute this code, including for commercial purposes, provided that the
+copyright notice is retained. For academic or other published work, please
+also cite it as described above.

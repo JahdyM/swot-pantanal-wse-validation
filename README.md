@@ -104,11 +104,11 @@ The Raster stage also requires `gdalmdimtranslate` on `PATH` (provided by the `g
 
 ## Citation
 
-If you use this repository, cite it using the metadata in [`CITATION.cff`](CITATION.cff). Citation details may be updated when the dissertation and an archived software release are publicly available.
+If you use this repository, cite the associated manuscript and software using the metadata in [`CITATION.cff`](CITATION.cff). Publication details will be updated when the manuscript is accepted.
 
 ## License
 
-No software license has been selected yet. Unless a license is added, the repository contents remain under the copyright holder's default rights. Third-party data retain their original licenses and terms of use.
+The code is released under the [MIT License](LICENSE), with an additional request to cite the work in academic or other published outputs as described in [`CITATION.cff`](CITATION.cff). Third-party data retain their original licenses and terms of use.
 
 ## Author
 

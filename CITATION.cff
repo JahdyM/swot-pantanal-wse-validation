@@ -1,22 +1,60 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite it using the metadata below."
+message: >-
+  If you use this software, please cite the associated paper
+  (preferred-citation below) and, optionally, this repository itself.
 type: software
-title: "SWOT Mission Data Validation for Pantanal Hydrodynamic Analysis"
+title: "SWOT Multi-Product WSE Pipeline — Pantanal Rivers"
 abstract: >-
-  Research software and reproducible workflows associated with the master's
-  dissertation “Surface Water and Ocean Topography (SWOT) Mission Data
-  Validation for Pantanal Hydrodinamic Analysis”.
+  A Jupyter notebook that downloads and processes all four SWOT Level-2
+  hydrology products (PIXC, Raster, Node, Reach) for a set of in-situ
+  gauging stations, corrects the Reach product's water surface elevation for
+  the reach-to-gauge offset, cross-checks completeness across products, and
+  de-duplicates the final tables.
 authors:
-  - family-names: Oliveira
-    given-names: Jahdy Moreno
-    affiliation: "National Institute for Space Research (INPE)"
-date-released: 2026-09-10
+  - family-names: Moreno-Oliveira
+    given-names: Jahdy
+    affiliation: >-
+      National Institute for Space Research (INPE), São José dos Campos,
+      Brazil
+date-released: "2026-09-16"
 repository-code: "https://github.com/JahdyM/swot-pantanal-wse-validation"
 url: "https://github.com/JahdyM/swot-pantanal-wse-validation"
+license: MIT
 keywords:
   - SWOT
   - Pantanal
   - water surface elevation
-  - hydrodynamics
+  - hydrology
   - satellite altimetry
   - validation
+preferred-citation:
+  type: article
+  title: >-
+    Multi-product validation of SWOT water surface elevation in the
+    Pantanal Rivers
+  journal: "Science of Remote Sensing"
+  status: submitted
+  authors:
+    - family-names: Moreno-Oliveira
+      given-names: Jahdy
+      affiliation: >-
+        National Institute for Space Research (INPE), São José dos Campos,
+        Brazil
+    - family-names: Fassoni-Andrade
+      given-names: A.
+      affiliation: >-
+        Institute of Geosciences, University of Brasília (UnB), Brasília,
+        Brazil
+    - family-names: Trigg
+      given-names: M. A.
+      affiliation: >-
+        School of Civil Engineering, University of Leeds, Leeds, United
+        Kingdom
+    - family-names: Moreira
+      given-names: D. M.
+      affiliation: Geological Survey of Brazil, Rio de Janeiro, Brazil
+    - family-names: Novo
+      given-names: E. M. L. de M.
+      affiliation: >-
+        National Institute for Space Research (INPE), São José dos Campos,
+        Brazil
